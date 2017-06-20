@@ -1,0 +1,22 @@
+
+
+<%= @user.name %>
+
+<% if @user.admin == true %>
+  <h3> ADMIN </h3>
+<% end %>
+
+
+Mood: <%= @user.mood %>
+Height: <%= @user.height %>
+Tickets: <%= @user.tickets %>
+
+<%= link_to "See attractions", attractions_path %>
+
+
+"Thanks for riding the Ferris Wheel!"
+"You are not tall enough to ride the Teacups"
+"You do not have enough tickets to ride the Ferris Wheel" 
+"You are not tall enough to ride the Roller Coaster"
+"You do not have enough tickets to ride the Roller Coaster"
+
